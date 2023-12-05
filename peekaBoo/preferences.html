@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preferences</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ddd;
+        align-items: center;
+        justify-content: center;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+    }
+
+    .box{
+        flex: 30%;
+        display: table;
+        align-items: flex-end;
+        text-align:inherit ;
+        font-size: 20px;
+        background-color:bisque;
+        color: black;
+        padding: 30px 30px;
+        border-radius: 20px;
+    }
+
+    .box img{
+        border-radius: 50%;
+        border: 2px solid #fff;
+        height: 250px;
+        width: 250px;
+    }
+
+    .box ul{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .box ul li{
+        list-style: none;
+        margin-top: 50px;
+        font-weight: 100;
+    }
+
+    .box ul li i{
+        cursor: pointer;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    .box ul li i:hover{
+        opacity: 0.6;
+    }
+
+    .box basics{
+        margin-left: 20px;
+        flex: 50%;
+        display: table;
+        padding: 30px 30px;
+        font-size: 20px;
+        background-color: #ecba06;
+        border-radius: 20px;
+    }
+
+    .box h2{
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    @media screen and (max-width: 1068px) {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+        .basics{
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .basics h1{
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2><b>My Preferences</b></h2>
+    <form>
+        <label for="gender">I am a:</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="male">Male &#128104;</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="female">Female  &#128105;</label><br>
+    </form><br>
+    <form>
+        <label for="gender">Interested in:</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="male">Male &#128104;</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="female">Female &#128105;</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="both">All &#128107;</label><br><br>
+        <form action="/action_page.php">
+            <label for="birthdaytime">Your Age:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <input type="submit" value="Submit">
+          </form><br>
+          <label for="status">Right now I'm looking for...</label> 
+    <select name="status" id="relationship"> 
+        <option value="long term">Long term partner</option> 
+        <option value="fun">Short term fun</option> 
+        <option value="friends">New Friends</option> 
+        <option value="not sure">Still figuring it out</option> 
+    </select><br>
+
+
+            <h2>Basics</h2>
+            <label for="zodiacs">What is your Zodiac sign?</label> 
+    <select name="signs" id="zodiacs"> 
+        <option value="capricorn">Capricorn &#9809;</option> 
+        <option value="aquarius">Aquaruis &#9810;</option> 
+        <option value="pisces">Pisces &#9811;</option> 
+        <option value="taurus">Taurus &#9801;</option> 
+        <option value="gemini">Gemini &#9802;</option>
+        <option value="cancer">Cancer &#9803;</option> 
+        <option value="leo">Leo &#9804;</option> 
+        <option value="aries">Aries &#9800;</option> 
+    </select>
+        <br><br>
+        <label for="education">What is your education level?</label>
+        <select name="education" id="learning">
+            <option value="bachelors">Bachelors &#127979;</option>
+            <option value="college">In college &#127979;</option>
+            <option value="highschool">Highschool &#127979;</option>
+            <option value="phd">PhD &#127979;</option>
+        </select><br><br>
+
+        <label for="family">Do you want children?</label>
+        <select name="family" id="children">
+        <option value="yes">I want children &#129490;</option>
+        <option value="no">I don't want children &#128581;</option>
+        <option value="yess">I have children and want more &#129490; &#x1F64C;</option>
+        <option value="mmh">Not sure yet &#129335;</option>
+        </select><br><br>
+
+        <label for="love">How do you receive love?</label>
+        <select name="together" id="statuss">
+            <option value="gestures">Thoughtful gestures &#x26F3;</option>
+            <option value="gifts">Presents &#127873;</option>
+            <option value="feels">Touch &#x1F445;</option>
+            <option value="quotes">Compliments &#128134;</option>
+        </select>
+        <br><br>
+        <input type="submit" value="save preferences">
+    </form>
+        </div>
+    </div>
+    
+</body>
+</html>
